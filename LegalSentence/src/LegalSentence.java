@@ -5,7 +5,7 @@ public class LegalSentence {
 	 * each string value and checking it with cases that are in the other method. */
 	
 	public boolean check(String sentence) {
-		String[] splitted = sentence.split("\\s+"); //splits the string into an array based on spaces
+		String[] splitted = sentence.split("\\s+");//splits the string into an array based on spaces
 		String prevValue = "start"; 				// beginning token
 		for (int i = 0; i < splitted.length; i++) {
 			String[] nextValue = possibleTokens(prevValue); //calls the possibleTokens method and gets the return value
@@ -15,12 +15,12 @@ public class LegalSentence {
 				System.out.println("Not a legal sentence.");
 				return false;
 			}
-
 		}
+
 		// this final if statement checks to see if the last value is p or q
 		if (splitted[splitted.length-1].equals("p") | splitted[splitted.length-1].equals("q")){
 			System.out.println("Is a legal sentence.");
-			return true;
+            return true;
 		}
 		else {
 			System.out.println("Not a legal sentence.");
