@@ -49,7 +49,7 @@ public class LegalSentence {
 				String[] d = {"p", "q", "~"};
 				return d;
 			default:
-				String[] e = {};
+				String[] e = {}; //returns empty string if the token does not match any case
 				return e;
 		}
 
