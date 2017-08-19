@@ -17,8 +17,8 @@ public class LegalSentence {
 			}
 		}
 
-		// this final if statement checks to see if the last value is p or q
-		if (splitted[splitted.length-1].equals("p") | splitted[splitted.length-1].equals("q")){
+		// if statement checks to see if the last value is p or q
+		if (splitted[splitted.length-1].matches("p|q"){
 			System.out.println("Is a legal sentence.");
             return true;
 		}
@@ -36,7 +36,7 @@ public class LegalSentence {
 				String[] a = {"p","q","~"};
 				return a;
 			case "~":
-				String[] b = {"p", "q", "~", "&", "|", "=>", "<=>",};
+				String[] b = {"p", "q", "~"};
 				return b;
 			case "p":
 			case "q":
